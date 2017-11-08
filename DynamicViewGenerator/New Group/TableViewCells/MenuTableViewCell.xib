@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="57" id="KGk-i7-Jjw" customClass="MenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KmK-IC-gZn">
+                        <rect key="frame" x="29" y="7" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="Oh8-b4-w3o"/>
+                            <constraint firstAttribute="width" constant="42" id="a0d-Id-0lh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alQ-ev-C5i">
+                        <rect key="frame" x="89" y="8" width="223" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="HFr-YR-iRr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-0k-kQY">
+                        <rect key="frame" x="8" y="56" width="304" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ccm-9i-dma"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="alQ-ev-C5i" firstAttribute="leading" secondItem="KmK-IC-gZn" secondAttribute="trailing" constant="18" id="AeF-78-mn4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="alQ-ev-C5i" secondAttribute="bottom" id="Kf6-jX-tSM"/>
+                    <constraint firstAttribute="bottom" secondItem="hdY-0k-kQY" secondAttribute="bottom" id="MBs-ws-bPt"/>
+                    <constraint firstAttribute="trailing" secondItem="hdY-0k-kQY" secondAttribute="trailing" constant="8" id="OyB-4I-0IM"/>
+                    <constraint firstItem="hdY-0k-kQY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TEO-9g-unK"/>
+                    <constraint firstItem="KmK-IC-gZn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="TfG-7L-8VG"/>
+                    <constraint firstItem="alQ-ev-C5i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Vg1-QQ-ZrK"/>
+                    <constraint firstItem="alQ-ev-C5i" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="f23-7l-1n9"/>
+                    <constraint firstItem="KmK-IC-gZn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="nIp-d8-B78"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="imgMenuItem" destination="KmK-IC-gZn" id="3eg-Qj-Wb5"/>
+                <outlet property="lblMenuTitle" destination="alQ-ev-C5i" id="CiW-y0-Se7"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="60.5"/>
+        </tableViewCell>
+    </objects>
+</document>

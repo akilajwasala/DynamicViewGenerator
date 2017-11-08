@@ -1,0 +1,35 @@
+{
+    "menu":
+    [{"type":"Left",
+     "items":[
+              {"title":"Contacts","icon":"cycle"},
+              {"title":"Communications","icon":"comm"},
+              {"title":"Oppertunities","icon":"Cake"},
+              {"title":"Settings","icon":"setting"},
+              {"title":"About","icon":"man"}
+              ]
+     },{"type":"Right",
+     "items":[
+              {"title":"Name","icon":"cycle"},
+              {"title":"Age","icon":"comm"},
+              {"title":"Sex","icon":"Cake"}
+              ]
+     }],
+    "ViewType": "Vertical",
+    "VCTitle": "Contact View Controller",
+    "Content": {
+        "type": "List",
+        "data": [
+                 {
+                 "name": "akila",
+                 "age": 25,
+                 "field": "SE"
+                 },
+                 {
+                 "name": "Wasala",
+                 "age": 15,
+                 "field": "AR"
+                 }
+                 ]
+    }
+}
